@@ -1,0 +1,122 @@
+.wrapper{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border: 1px solid black;
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    
+}
+
+.nav-items > li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+/* for search bar */
+.search{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* for restaurants-cards */
+.res-card-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:"space-evenly"; */
+    justify-content: space-around;
+    padding: 2rem 5rem;
+      flex-wrap: wrap;
+}
+.res-card{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 15rem;
+    margin: 30px 10px;
+    padding: 5px 5px;
+}
+
+.res-card:hover{
+    border: 1px solid gray;
+    box-shadow: 10px 10px 10px rgb(101, 113, 117);
+}
+
+.res-card-img{
+    height: 15rem;
+    object-fit: cover;
+
+}
+
+.res-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.res-card-body>h3{
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+.res-card-body>h4{
+    margin: 2px 0px;
+    padding: 0px;
+}
+
+.res-card-link{
+    text-decoration: none ;
+    color: inherit;
+}
+
+
+/* search box */
+.search-box{
+ margin: 0px 10px;
+}
+
+.search-btn{
+    cursor: pointer;
+}
+
+/* shimmer css */
+.Shimmer-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* justify-content:"space-evenly"; */
+    justify-content: space-around;
+    padding: 2rem 5rem;
+      flex-wrap: wrap;
+  }
+  
+  .shimmer-card {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 15rem;
+    margin: 30px 10px;
+    padding: 5px 5px;
+    background-color: #ccc;
+    animation: breathe 1s infinite alternate; /* Adjust duration as needed */
+  }
+  
+  @keyframes breathe {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1.0); /* Adjust scale factor for desired effect */
+    }
+  }
+  

@@ -18,7 +18,7 @@ const Body = () => {
   const RestaurantCardPromoted = withPromtedLabel(RestaurantCard);
 
   const fetchResponse = async () => {
-    const response = await fetch("http://localhost:8082/res/all");
+    const response = await fetch("https://the-bite-station-backend.onrender.com/res/all");
     const json = await response.json();
 
     setListOfRestaurants(json);
